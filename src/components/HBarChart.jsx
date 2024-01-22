@@ -1,4 +1,4 @@
-// keshav 
+
 import React from 'react'
 import { markerData } from '../Data/markerData';
 import { Bar } from 'react-chartjs-2';
@@ -89,8 +89,9 @@ const options = {
 const HBarChart = () => {
   return (
   <>
-    <div className='bg-white px-4   rounded-sm border border-gray-200 flex-1 ml-5 mb-10 w-1/2 h-12px '>
-       <div style={{ width: '50vw', height: '30vh' }}>
+    <div className='bg-white px-4   rounded-sm border border-gray-200 flex-1 ml-5 mr-5 mb-10 w-[600px
+    ] h-12px '>
+       <div style={{ width: '50vw', height: '31vh' }}>
       <Bar data={data} options={options}/>
     </div>
     </div>

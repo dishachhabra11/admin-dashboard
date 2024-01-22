@@ -20,18 +20,19 @@ import { MdSearch } from "react-icons/md";
 import Select from 'react-select';
 import { useState, useEffect } from 'react';
 import usePlacesAutocomplete, {getGeocode, getLatLng} from 'use-places-autocomplete';
+import logo from './logo.png'
 
 
 const Header = ({map}) => {
   return (
     <div className='bg-white h-16 px-4 flex justify-between items-center border-b border-gray-200'>
-        <div className='relative '>
-            <MdSearch fontSize={23} className='text-gray-400 absolute top-1/4 px- pl-2 '/>
+        <div className=' relative'>
+            <MdSearch fontSize={20} className='text-gray-400 absolute top-1/4 px- pl-2 '/>
             {/* <input type="text" placeholder='Search....' className='text-sm focus:outline-none active:outline-none h-10 w-[24rem]  border border-gray-300 rounded-sm px-7'></input> */}
             {map && <SearchField map={map} />}
         </div>
-        <div className='flex-items-center gap-2 mr-2'>
-            {/* icon  sixe 24 or 23 */}
+        <div className='flex-items-center gap-2 mr-2 cursor-pointer'>
+           <img src={logo} alt='imc-logo' width="40px" height="40px" />
         </div>
     </div>
   )
@@ -73,15 +74,16 @@ const SearchField = ({ map }) => {
   }
   
   return (
-    <Select
+   <>
+    <Select 
       value={value}
       onInputChange={(text) => setValue(text)}
       onChange={(address) => handleSelect(address.value)}
       options={selectOptions}
       isDisabled={!ready}
-      placeholder="Search an address"
+      placeholder="Search an address....."
       styles={searchFieldStyle}
-    />
+    /></>
   );
 }
 

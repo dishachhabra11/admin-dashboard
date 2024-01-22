@@ -32,7 +32,7 @@ const data = {
 const Piechart = () => {
   return (
     <>
-      <div className='w-[15rem] h-[15rem] bg-white p-3 rounded-sm border border-gray-200 flex flex-col flex-1 mt-5 mr-5 mb-5 items-center '>
+      <div className='w-[15rem] h-[281px] bg-white p-3 rounded-sm border border-gray-200 flex flex-col flex-1 mt-5 mr-5 mb-5 items-center '>
         <Pie data={data} />
       </div>
     </>
