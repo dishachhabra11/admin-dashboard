@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { MdDashboard } from "react-icons/md";
+import { IoTrashBin } from "react-icons/io5";
+import { FaWater } from "react-icons/fa";
+import { FaHouseUser } from "react-icons/fa";
 
 const linkClasses='flex items-center gap-2 font-light px-3 py-2 hover:bg-neutral-700 hover:no-underline  active:bg-nuetral-700 text-xl mb-2 rounded-sm'
 const Sidebar = () => {
@@ -8,9 +12,10 @@ const Sidebar = () => {
             {/* react icon size 24 */}
             <span className='text-nuetral-100 text-2xl mb-4'>Digital Door</span></div>
         <div className='flex-1 flex-row'>
-        <div className={linkClasses}><button>Show all</button></div>
-        <div className={linkClasses}><button>Garbage Tax</button></div>
-        <div className={linkClasses}><button>Water Tax</button></div>
+        <div className={linkClasses}><MdDashboard/><button>Show all</button></div>
+        <div className={linkClasses}><IoTrashBin/><button>Garbage Tax</button></div>
+        <div className={linkClasses}><FaWater/><button>Water Tax</button></div>
+        <div className={linkClasses}><FaHouseUser/><button>Property Tax</button></div>
         </div>
 
         <div >bottom part</div>
