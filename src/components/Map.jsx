@@ -11,7 +11,7 @@ const center = {
   lng: 75.8577, // Indore longitude
 };
 
-const App = () => {
+const Map = ({setMap}) => {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: 'AIzaSyAik0IVosernmdG7ppjmMbuRdsLdne3vjM',
     libraries,
@@ -31,6 +31,7 @@ const App = () => {
         mapContainerStyle={mapContainerStyle}
         zoom={10}
         center={center}
+        onLoad={setMap}
       >
         <Marker position={center} />
       </GoogleMap></div>
@@ -38,4 +39,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Map;
