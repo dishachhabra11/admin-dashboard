@@ -63,7 +63,7 @@ const Sidebar = () => {
           <button onClick={() => updateFilter('unpaidLandTax')}>Property Tax</button>
         </div>
       </div>
-      <div>bottom part</div>
+      
     </div>
   );
 };
