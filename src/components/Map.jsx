@@ -90,8 +90,8 @@ import { useMapContext } from './MapContext';
 
 
 const mapContainerStyle = {
-  width: '680px',
-  height: '280px',
+  width: '670px',
+  height: '300px',
 };
 
 
@@ -221,7 +221,7 @@ const Map = ({setMap}) => {
 
   return (
     <div>
-     <div className='mt-5 mb-1 ml-5 border border-gray-200 flex-1 '>
+     <div className='mt-5 mb-1 ml-5 border border-gray-200 flex-1 rounded-xl '>
     
        <GoogleMap 
        key={markers.length}

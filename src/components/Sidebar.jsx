@@ -41,7 +41,7 @@ const Sidebar = () => {
   const { updateFilter } = useMapContext();
 
   return (
-    <div className='w-60 p-3 flex flex-col text-white bg-neutral-900'>
+    <div className='w-60 p-3 flex flex-col text-white bg-[#1C2438]'>
       <div className='flex items-center gap-2 px-1 py-3 '>
         <span className='text-nuetral-100 text-2xl mb-4'>Digital Door</span>
       </div>

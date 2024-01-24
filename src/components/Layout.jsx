@@ -9,7 +9,7 @@ const Layout = () => {
   const [map, setMap] = useState(null);
   return (
     <>
-      <div className="flex flex-row h-screen w-screen bg-[#F5F4F6] overflow-hidden">
+      <div className="flex flex-row h-screen w-screen bg-[#141b2d] overflow-hidden">
         <Sidebar/>
         
        

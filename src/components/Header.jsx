@@ -25,11 +25,11 @@ import logo from './logo.png'
 
 const Header = ({map}) => {
   return (
-    <div className='bg-white h-16 px-4 flex justify-between items-center border-b border-gray-200'>
-        <div className=' relative'>
+    <div className='bg-[#141b2d] h-16 px-4 flex justify-between items-center border-b border-gray-800'>
+        <div className=' relative bg-[#1C2438]'>
             <MdSearch fontSize={20} className='text-gray-400 absolute top-1/4 px- pl-2 '/>
             {/* <input type="text" placeholder='Search....' className='text-sm focus:outline-none active:outline-none h-10 w-[24rem]  border border-gray-300 rounded-sm px-7'></input> */}
-            {map && <SearchField map={map} />}
+            {map && <SearchField  map={map} />}
         </div>
         <div className='flex-items-center gap-2 mr-2 cursor-pointer'>
            <img src={logo} alt='imc-logo' width="40px" height="40px" />
@@ -38,7 +38,17 @@ const Header = ({map}) => {
   )
 }
 
+const searchFieldStyle = {
+  control: (baseStyles) => ({
+    ...baseStyles,
+    // width: '25rem',
+    backgroundColor: '#1C2438', 
+  })
+};
+
+
 const SearchField = ({ map }) => {
+ 
   const { ready, value, setValue, suggestions: { status, data }, clearSuggestions } = usePlacesAutocomplete();
   const [selectOptions, setSelectOptions] = useState([]);
 
@@ -66,12 +76,7 @@ const SearchField = ({ map }) => {
     }
   };  
 
-  const searchFieldStyle = {
-    control: (baseStyles) => ({
-      ...baseStyles,
-      width: '25rem'
-    })
-  }
+ 
   
   return (
    <>
@@ -82,7 +87,9 @@ const SearchField = ({ map }) => {
       options={selectOptions}
       isDisabled={!ready}
       placeholder="Search an address....."
+      
       styles={searchFieldStyle}
+     
     /></>
   );
 }

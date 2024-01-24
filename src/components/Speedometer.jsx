@@ -3,11 +3,11 @@ import React from 'react'
 
 const Speedometer = () => {
   return (
-    <div className="bg-white flex flex-1  rounded-sm border border-gray-200 w-[15rem] h-[12rem] ml-5 mb-5">
+    <div className="bg-[#1C2438] flex flex-1   border border-gray-800 w-[15rem] h-[12rem] ml-5 mb-5 rounded-xl">
         <div style={{
     width: "15rem",
     height: "192px",
-    background: "white",
+    background: "#1C2438",
     display:"flex",
     flex: "1 1 0%",
     borderRadius:"5px",

@@ -89,7 +89,7 @@ const options = {
 const HBarChart = () => {
   return (
   <>
-    <div className='bg-white px-4   rounded-sm border border-gray-200 flex-1 ml-5 mr-5 mb-10  '>
+    <div className='bg-[#1C2438]   rounded-xl border border-gray-800 flex-1 ml-5 mr-5 mb-10  '>
        <div style={{ width: '50vw', height: '192px' }}>
       <Bar data={data} options={options}/>
     </div>
