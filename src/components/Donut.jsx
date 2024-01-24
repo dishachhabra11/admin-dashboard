@@ -17,9 +17,7 @@ const DonutChart = () => {
         margin: "auto 10%",
       }}
     >
-      <h1 style={{ color: "green" }}>GeeksforGeeks</h1>
-      <h3>React JS example for donut chart using Recharts</h3>
-      <PieChart width={700} height={700}>
+      <PieChart width={410} height={410} className="max-h-64 bg-white -mx-14">
         <Tooltip />
         <Pie
           data={data}
