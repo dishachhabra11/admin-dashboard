@@ -2,9 +2,9 @@
 
 import React from 'react'
 import Map from './Map';
-import Piechart from './Piechart';
 import HBarChart from './HBarChart';
 import Speedometer from './Speedometer';
+import DonutChart from './Donut';
 
 
 
@@ -15,7 +15,7 @@ const Dashboard = ({setMap}) => {
     
     <div className='flex flex-row gap-4 w-full'>
         <Map setMap={setMap}/>
-        <Piechart/>
+        <DonutChart/>
     </div>
     <div className='flex flex-row gap-1/4 w-full'>
     <Speedometer/>
